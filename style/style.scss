@@ -1,0 +1,280 @@
+$white: #FFFFFF;
+$black: #070809;
+$color1: #593D21;
+$color2: #F5E579;
+$titlecolor: #B07019;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 300;
+}
+
+body {
+    color: $white;
+    background: $black;
+    font-family: 'Roboto';
+}
+
+.bg-container {
+    background: url(../assets/bg.webp);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.web-container {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+// .banner {
+//     // border: yellow 1px solid;
+//     width: 100%;
+//     height: 60px;
+//     position: absolute;
+//     background: $black;
+// }
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    position: relative;
+    z-index: 10;
+    background: #0708098f;
+    border-radius: 0 0 15px 15px;
+
+    .logo {
+        // outline: steelblue 1px solid;
+        display: flex;
+        align-items: center;
+        color: $white;
+
+        h1 {
+            font-family: 'Roboto Slab';
+            font-size: clamp(18px, 2vw, 1.9rem);
+        }
+
+        img {
+            width: clamp(40px, 4vw, 70px);
+        }
+    }
+
+    ul {
+        display: flex;
+        padding-right: 10px;
+        li {
+            list-style-type: none;
+            padding: 6px;
+            font-size: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        a {
+            padding: 10px 5px;
+            color: $white;
+        }
+
+        a:hover {
+            color: $color2;
+        }
+        
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: cen;
+    flex-direction: column;
+    height: 87vh;
+    width: 90%;
+    margin: 0 auto;
+    .text {
+        width: 100%;
+        cursor: default;
+
+        h1, p {
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(1.4rem, 6vw, 3.5rem);
+            
+        }
+
+        p {
+            font-size: clamp(1rem, 1.4vw, 1.3rem);
+            max-width: 60ch;
+            margin: 0 auto;
+        }
+    }
+
+    .btn{
+        margin: 0 auto 20px;
+        padding: 8px 15px;
+        background: $color1;
+        color: $color2;
+        text-align: center;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    ul {
+        margin: 0 auto;
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        img {
+            width: 40px;
+        }
+    }
+}
+
+.title {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 20%;
+    }
+
+    h1 {
+        font-size: clamp(1rem, 4vw, 3rem);
+        color: $titlecolor;
+        margin: 0 10px;
+    }
+
+    .flip {
+        transform: scaleX(-1);
+    }
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 70px;
+    div {
+        width: 70vw;
+        height: 320px;
+        background: rgb(65, 65, 65);
+    }
+    
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+
+    img {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h1, p, a{
+        margin-bottom: 20px;
+    }
+
+    a {
+        background: $color1;
+        color: $color2;
+        text-align: center;
+        padding: 8px 15px;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    
+
+}
+
+@media (min-width: 600px) {
+    .web-container {
+        width: 90%;
+    }
+
+    .products {
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+        div {
+            height: clamp(300px, 35vw,900px);
+            width: 400px;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .web-container {
+        width: 85%;
+    }
+
+
+    .split {
+        flex-direction: row;
+
+        h1 {
+            font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+        }
+
+        p {
+            font-size: clamp(1rem, 1.4vw, 1.5rem);
+            max-width: 60ch;
+            margin-bottom: 20px;
+        }
+
+        img {
+            padding-right: clamp(20px, 3vw, 2.4rem);
+        }
+
+        .img {
+            order: 2;
+        }
+        
+        .content {
+            order: 1;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .web-container {
+        width: 80%;
+    }
+
+    .products {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1225px) {
+    .web-container {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+}

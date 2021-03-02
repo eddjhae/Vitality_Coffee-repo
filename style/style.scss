@@ -21,7 +21,7 @@ p {
 body {
     color: $white;
     background: $black;
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'sans-serif';
 }
 
 .bg-container {
@@ -162,11 +162,42 @@ main {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 70px;
-    div {
+    .anim2 {
         width: 70vw;
         height: 320px;
-        background: rgb(65, 65, 65);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10%;
+        transition: .2s;
+        cursor: pointer;
+        outline: green 1px solid;
     }
+
+    .premium-blend {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;            
+        }
+
+        h2 {
+            padding: 5px;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color:$color2;
+            font-size: 1.2em;
+            background-color: #593D21;   
+        }
+    }
+
+    .premium-blend:hover {
+        transform: scale(.97);
+    }
+
 }
 
 .split {
@@ -210,10 +241,7 @@ footer {
 }
 
 
-@media (min-width: 600px) {
-    .web-container {
-        width: 90%;
-    }
+@media (min-width: 650px) {
 
     .products {
         flex-direction: row;
@@ -229,7 +257,7 @@ footer {
 
 @media (min-width: 720px) {
     .web-container {
-        width: 85%;
+        width: 90%;
     }
 
 

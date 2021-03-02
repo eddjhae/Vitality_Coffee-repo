@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 </head>
 <body>
     
@@ -26,14 +30,14 @@
             </header>
 
             <main>
-                <div class="text">
+                <div class="text anim1">
                     <h1>We roast and deliver Coffee</h1>
                     <p>Let's make your day better with coffee!! discover more about coffee and share with you our love for home-brewed and hand-crafted coffee beverages.</p>
                     <p>Anything coffee-related? You’ll find it here.</p>
                 </div>
                 
-                <a class="btn" href="#">Shop Now</a>
-                    <ul>
+                <a class="btn anim1" href="#">Shop Now</a>
+                    <ul class="anim1">
                         <li><a href="#"><img src="assets/Facebook white.svg" alt=""></a></li>
                         <li><a href="#"><img src="assets/Instagram.svg" alt=""></a></li>
                         <li><a href="#"><img src="assets/Gmail white.svg" alt=""></a></li>
@@ -84,11 +88,15 @@
                 </div>
             </div>
         </section>
-    </div>
 
-    <footer>
         
-    </footer>
-       
+        <footer>
+            <a class="logo" href="#">
+                <h1>VITALITY<br>COFFEE</h1>
+                <img src="assets/logo.svg" alt="logo">
+            </a>
+        </footer>
+    </div>
 </body>
+<script src="main.js"></script>
 </html>

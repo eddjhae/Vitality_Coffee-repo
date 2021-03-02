@@ -32,6 +32,26 @@ body {
   overflow: hidden;
 }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+
+.logo h1 {
+  font-family: 'Roboto Slab';
+  font-weight: 300;
+  font-size: clamp(18px, 2vw, 1.9rem);
+}
+
+.logo img {
+  width: clamp(40px, 4vw, 70px);
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -48,25 +68,6 @@ header {
   z-index: 10;
   background: #0708098f;
   border-radius: 0 0 15px 15px;
-}
-
-header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #FFFFFF;
-}
-
-header .logo h1 {
-  font-family: 'Roboto Slab';
-  font-size: clamp(18px, 2vw, 1.9rem);
-}
-
-header .logo img {
-  width: clamp(40px, 4vw, 70px);
 }
 
 header ul {
@@ -235,6 +236,21 @@ main ul img {
   font-weight: 500;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+footer {
+  outline: springgreen 2px solid;
+  width: 100vw;
+}
+
+footer .footer-line {
+  outline: red 2px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: auto 3px;
+  background: #593D21;
 }
 
 @media (min-width: 600px) {

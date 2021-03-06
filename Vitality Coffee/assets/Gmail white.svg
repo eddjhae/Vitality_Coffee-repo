@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 77 77">
+  <g id="Gmail_white" data-name="Gmail white" transform="translate(-370 -669)">
+    <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(370 669)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="38.5" cy="38.5" r="38.5" stroke="none"/>
+      <circle cx="38.5" cy="38.5" r="37.5" fill="none"/>
+    </g>
+    <g id="Gmail_white-2" data-name="Gmail white">
+      <g id="Rectangle_89" data-name="Rectangle 89" transform="translate(387 691)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="43" height="33" rx="3" stroke="none"/>
+        <rect x="1" y="1" width="41" height="31" rx="2" fill="none"/>
+      </g>
+      <path id="Icon_simple-gmail" data-name="Icon simple-gmail" d="M43.313,7.207v27.07a2.659,2.659,0,0,1-2.707,2.707H37.9V12.417L21.656,24.081,5.414,12.417V36.985H2.707A2.658,2.658,0,0,1,0,34.277V7.207A2.66,2.66,0,0,1,2.707,4.5h.9L21.656,17.584,39.7,4.5h.9a2.66,2.66,0,0,1,2.707,2.707Z" transform="translate(386.844 686.758)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

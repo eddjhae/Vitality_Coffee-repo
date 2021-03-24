@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
@@ -53,13 +52,13 @@
         </div>
         
         <section class="products">
-                <a href="#" class="anim2" ><img src="assets/Coffee_Bag.webp" alt="Vitality Coffee bag"><h2>Premium Coffee and Blends</h2></a>
-                <a href="#" class="anim2"><img src="assets/coffee_handful.webp" alt="holding coffee"><h2>Single Origins and Specialty</h2></a>
+                <a href="#" class="anim2" ><img src="assets/Coffee_Bag.webp" alt="Vitality Coffee bag"><h2 class="txt">Premium Coffee and Blends</h2></a>
+                <a href="#" class="anim2"><img src="assets/coffee_handful.webp" alt="holding coffee"><h2 class="txt">Single Origins and Specialty</h2></a>
                 <a href="#" class="anim2"><img src="assets/coffee_equip.webp" alt="coffee equipments"><h2>Brewing Equipment and accessories</h2></a>
         </section>
 
         <section>
-            <div class="split">
+            <div class="split coffee-solution">
                 <div>
                     <img src="assets/coffee shop.webp" alt="busy coffee shop">
                 </div>
@@ -73,7 +72,7 @@
                 </div>
             </div>
 
-            <div class="split">
+            <div class="split coffee-explore">
 
                 <div class="img">
                     <img src="assets/hanful coffee.webp" alt="holding a coffee beans">
@@ -81,22 +80,37 @@
 
                 <div class="content text">
                     <h1>Explore our coffees</h1>
-                    <p>FWe support our local coffee farmers. You can do the same by purchasing their coffees.</p>
+                    <p>We support our local coffee farmers. You can do the same by purchasing their coffees.</p>
                     <a class="btn" href="#">shop now</a>
                 </div>
             </div>
         </section>
 
-        
         <footer>
-            <a class="logo" href="#">
-                <h1>VITALITY<br>COFFEE</h1>
-                <img src="assets/logo.svg" alt="logo">
-            </a>
+                <div class="logo">
+                    <h1>VITALITY<br>COFFEE</h1>
+                    <a href="#"><img src="assets/logo.svg" alt="logo"></a>
+                </div>
+                
 
-            
+                <div class="product">
+                    <h1>PRODUCTS</h1>
+                    <a href="#">Premium Coffee</a>
+                    <a href="#">Single Origins</a>
+                    <a href="#">Our Blends</a>
+                    <a href="#">Coffee Equipment</a>
+                </div>
+    
+                <div class="where">
+                    <h1>WHERE TO BUY</h1>
+                    <a href="#">Store List</a>
+    
+                    <h1>SUPPORT</h1>
+                    <a href="#">Message Us</a>
+                </div>
             
         </footer>
+        <p style="padding: 10px 0;">&copy;All Right Reserved. VITALITY COFFEE</p>
     </div>
 </body>
 <script src="main.js"></script>

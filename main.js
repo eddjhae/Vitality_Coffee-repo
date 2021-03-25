@@ -1,7 +1,9 @@
+// if refresh go top of page
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
 
+// GSAP timeline
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: '.anim2',
